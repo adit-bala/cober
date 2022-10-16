@@ -7,8 +7,12 @@ import {
     Button,
     Icon,
     Box,
+    SimpleGrid,
     IconProps,
+    Image,
+    HStack,
   } from '@chakra-ui/react';
+
   
   export default function Home() {
     return (
@@ -41,7 +45,38 @@ import {
             </Button>
           </Stack>
         </Stack>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={200}>
+        <Stack spacing={4}>
+          <Text
+            textTransform={'uppercase'}
+            color={'blue.400'}
+            fontWeight={600}
+            fontSize={'xl'}
+            p={2}
+            alignSelf={'flex-start'}
+            rounded={'md'}>
+            What We Do
+          </Text>
+          <Heading>Making ride shares cheaper, easier, and safer</Heading>
+          <Text color={'gray.500'} fontSize={'lg'}>
+          Organizing ride shares between college students that actually helps them
+          save on transportation fees. Students can make requests to share rides with
+          others from their college and split fees evenly.
+          </Text>
+        </Stack>
+        <Flex>
+          <Image
+            rounded={'md'}
+            alt={'feature image'}
+            src={
+              'coberv1.png'
+            }
+            objectFit={'cover'}
+          />
+        </Flex>
+      </SimpleGrid>
       </Container>
+      
     );
   }
   
