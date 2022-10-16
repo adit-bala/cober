@@ -70,15 +70,20 @@ export default function Home() {
         </Text>
       </Stack>
       <Flex>
-        <Image
-          rounded={'md'}
-          alt={'feature image'}
-          src={
-            'coberv1.png'
-          }
-          objectFit={'cover'}
-        />
+        <Box>
+          <Image
+            rounded={'md'}
+            alt={'feature image'}
+            src={
+              'coberv1.png'
+            }
+            objectFit={'cover'}
+          />
+        </Box>
       </Flex>
+      <Box mb={'5'}>
+        <Text fontSize='xs'>Copyright © 2022 Cober, Inc. All Rights Reserved.</Text>
+      </Box>
     </SimpleGrid>
     </Container>
     
