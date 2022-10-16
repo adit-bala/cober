@@ -75,7 +75,7 @@ export default function Requests() {
               bg: 'blue.500',
             }}
           >
-            More Details >
+            More Details {'>'}
           </Button>
         </HStack>
       </Box>

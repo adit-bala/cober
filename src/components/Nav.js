@@ -15,7 +15,7 @@ import {
 import * as React from 'react';
 import Home from './Home';
 import MyRides from './MyRides';
-import SignUpCard from './SignUpCard';
+import SignupCard from './SignupCard';
 import RequestCard from './RequestCard';
 import About from './About';
 import FindRides from './FindRides';
