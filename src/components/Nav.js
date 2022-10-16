@@ -13,21 +13,23 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import * as React from 'react'
+import Home from "./Home"
+import MyRides from "./MyRides"
+import SignUpCard from './SignUpCard'
 import { FiMenu } from 'react-icons/fi'
 // import { Logo } from './Logo'
-
-export default function Nav() {
+export default function Nav({setPage}) {
   return (
     <Box>
-      <Flex display="flex" ml="30px" mr="30px" justify="flex-end">
+      <Flex display="flex" margin="20px" justify="flex-end">
         <Box>
           <Image src="logo.png" boxSize='50px' align></Image>
         </Box>
         <Spacer />
-        <ButtonGroup variant="ghost" margin="8px" spacing="5">
-          <Button _hover={{background: "gray.200"}}>Home</Button>
-          <Button _hover={{background: "gray.200"}}>About</Button>
-          <Button variant="solid"
+        <ButtonGroup variant="ghost">
+          <Button onClick={() => setPage(Home)} _hover={{background: "gray.200"} }>Home</Button>
+          <Button onClick={() => setPage(MyRides)} _hover={{background: "gray.200"}}>About</Button>
+          <Button onClick={() => setPage(SignUpCard)} variant="solid"
             backgroundColor="#204988"
             textColor="white"
             _hover={{
@@ -35,7 +37,7 @@ export default function Nav() {
               color: "#204988",
             }}
             >
-              Sign In
+              Sign Up
           </Button>
         </ButtonGroup>
       </Flex>
