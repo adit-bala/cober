@@ -15,7 +15,7 @@ import {
 import * as React from 'react';
 import Home from './Home';
 import MyRides from './MyRides';
-import SignUpCard from './SignupCard';
+import SignupCard from './SignupCard';
 import About from './About';
 import { FiMenu } from 'react-icons/fi';
 // import { Logo } from './Logo'
