@@ -17,7 +17,7 @@ import Home from './components/Home';
 import MyRides from './components/MyRides';
 import RequestCard from './components/RequestCard';
 import Requests from './components/Requests';
-import SignUpCard from './components/SignUpCard';
+import SignupCard from './components/SignupCard';
 // const { Client } = require('pg');
 function App() {
   const [page, setPage] = useState(<Home />);
