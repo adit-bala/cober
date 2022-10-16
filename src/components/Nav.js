@@ -15,7 +15,8 @@ import {
 import * as React from 'react';
 import Home from './Home';
 import MyRides from './MyRides';
-import SignUpCard from './SignUpCard';
+import SignUpCard from './SignupCard';
+import About from './About';
 import { FiMenu } from 'react-icons/fi';
 // import { Logo } from './Logo'
 export default function Nav({ setPage, setLogin, login }) {
@@ -34,7 +35,7 @@ export default function Nav({ setPage, setLogin, login }) {
             Home
           </Button>
           <Button
-            onClick={() => setPage(MyRides)}
+            onClick={() => setPage(About)}
             _hover={{ background: 'gray.200' }}
           >
             About
@@ -60,7 +61,7 @@ export default function Nav({ setPage, setLogin, login }) {
             Home
           </Button>
           <Button
-            onClick={() => setPage(MyRides)}
+            onClick={() => setPage(About)}
             _hover={{ background: 'gray.200' }}
           >
             About
