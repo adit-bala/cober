@@ -11,10 +11,10 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
-import Nav from './components/Nav';
+import SignupCard from './components/SignupCard';
 
 function App() {
-  return <Nav />;
+  return <SignupCard />;
 }
 
 export default App;
