@@ -82,7 +82,7 @@ export default function Nav({ setPage, setLogin, login }) {
               onClick={() => setPage(<RequestCard setPage={setPage} />)}
               _hover={{ background: 'gray.200' }}
             >
-              Make a request
+              Make a Request
             </Button>
             <Button
               onClick={() => setPage(MyRides)}
