@@ -64,7 +64,7 @@ import {
         <Heading fontSize={'4xl'} fontFamily={'heading'}>
             Past
         </Heading>
-        <Box mt={'500'} mb={'1'}>
+        <Box pt={'400'} pb={'5'}>
           <Text fontSize='xs'>Copyright © 2022 Cober, Inc. All Rights Reserved.</Text>
         </Box>
       </VStack>

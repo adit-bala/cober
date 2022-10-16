@@ -72,7 +72,7 @@ import {
                     }
                     />
             </SimpleGrid>
-            <Box mt={'40'} mb={'1'}>
+            <Box mt={'40'} mb={'1'} align={'center'}>
               <Text fontSize='xs'>Copyright © 2022 Cober, Inc. All Rights Reserved.</Text>
             </Box>
         </Box>
