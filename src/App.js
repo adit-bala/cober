@@ -11,13 +11,18 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
+import { useState } from 'react';
 import Nav from './components/Nav';
 import Home from './components/Home';
-import Rides from './components/MyRides';
 
 function App() {
-  return <Home />;
+  const [page, setPage] = useState(<Home />);
+  const [login, setLogin] = useState({});
+  return (
+    <>
+      <Nav setPage={setPage} setLogin={setLogin} login={login}/>
+      {page}
+    </>
+  );
 }
-
-
 export default App;
