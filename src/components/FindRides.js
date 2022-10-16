@@ -156,7 +156,7 @@ export default function FindRides({ setPage, showReq }) {
                                 </FormLabel>
                                 <Select {...field} placeholder="No Preference">
                                   <option>Male Only</option>
-                                  <option>Femaly Only</option>
+                                  <option>Female Only</option>
                                 </Select>
                                 <FormErrorMessage>
                                   {form.errors.name}
@@ -167,7 +167,7 @@ export default function FindRides({ setPage, showReq }) {
                           <Stack spacing={10} pt={2}>
                             <Button
                               mt={4}
-                              colorScheme="teal"
+                              colorScheme="#204988"
                               isLoading={props.isSubmitting}
                               type="submit"
                             >
