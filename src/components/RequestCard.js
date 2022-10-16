@@ -58,7 +58,6 @@ export default function SignupCard({ setPage }) {
                 }}
                 onSubmit={(values, actions) => {
                   setTimeout(() => {
-                    alert(JSON.stringify(values, null, 2));
                     setPage(
                       <MyRides Requests={JSON.stringify(values, null, 2)} />
                     );
