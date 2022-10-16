@@ -27,7 +27,7 @@ import {
           <Heading as='h2' size='2xl'>
               Ride sharing for college students, {' '}
           <Text as={'span'} color={'#f7e4aa'}>
-              made easy
+            made easy
             </Text>
         </Heading>
           <Text color={'gray.500'} maxW={'3xl'}>
