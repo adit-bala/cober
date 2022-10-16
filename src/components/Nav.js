@@ -20,12 +20,18 @@ export default function Nav() {
   return (
     <Box>
       <Flex display="flex" margin="20px" justify="flex-end">
+        <Box>
+        </Box>
         <ButtonGroup variant="ghost">
-          <Button>Home</Button>
-          <Button>About</Button>
+          <Button _hover={{background: "gray.200"}}>Home</Button>
+          <Button _hover={{background: "gray.200"}}>About</Button>
           <Button variant="solid"
             backgroundColor="#204988"
             textColor="white"
+            _hover={{
+              background: "gray.300",
+              color: "#204988",
+            }}
             >
               Sign In
           </Button>
