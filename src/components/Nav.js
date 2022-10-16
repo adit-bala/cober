@@ -2,19 +2,11 @@ import {
   Box,
   Button,
   ButtonGroup,
-  color,
-  Container,
   Flex,
-  HStack,
-  IconButton,
   Image,
-  Spacer,
-  useBreakpointValue,
-  useColorModeValue,
+  Spacer
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { FiMenu } from 'react-icons/fi'
-// import { Logo } from './Logo'
 
 export default function Nav() {
   return (
