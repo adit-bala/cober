@@ -23,7 +23,7 @@ import {
         </Heading>
           <Heading as='h2' size='2xl'>
               Ride sharing for college students, {' '}
-          <Text as={'span'} color={'blue'}>
+          <Text as={'span'} color={'#5657ff'}>
               made easy
             </Text>
         </Heading>
@@ -35,8 +35,8 @@ import {
               rounded={'full'}
               px={6}
               colorScheme={'green'}
-              bg={'green.400'}
-              _hover={{ bg: 'green.500' }}>
+              bg={'#52e3b5'}
+              _hover={{ bg: '#4cc7a0' }}>
               Sign up Now!
             </Button>
           </Stack>
