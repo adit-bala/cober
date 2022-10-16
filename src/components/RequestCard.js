@@ -137,6 +137,9 @@ export default function SignupCard({ setPage }) {
               </Formik>
             </Stack>
           </Box>
+          <Box pt={'200'} align={'center'}>
+            <Text fontSize='xs'>Copyright © 2022 Cober, Inc. All Rights Reserved.</Text>
+          </Box>
         </Stack>
       </Flex>
     </>
