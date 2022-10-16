@@ -18,13 +18,16 @@ import {
           align={'center'}
           spacing={{ base: 8, md: 10 }}
           py={{ base: 20, md: 28 }}>
-          <Heading size='lg' fontSize='70px'>
-              Cober
+          <Heading size='lg' fontSize='70px' color={'#204988'}>
+              Co
+          <Text as={'span'} color={'black'}>
+              ber
+              </Text>
         </Heading>
           <Heading as='h2' size='2xl'>
               Ride sharing for college students, {' '}
-          <Text as={'span'} color={'#5657ff'}>
-              made easy
+          <Text as={'span'} color={'#f7e4aa'}>
+            made easy
             </Text>
         </Heading>
           <Text color={'gray.500'} maxW={'3xl'}>
@@ -35,8 +38,8 @@ import {
               rounded={'full'}
               px={6}
               colorScheme={'green'}
-              bg={'#52e3b5'}
-              _hover={{ bg: '#4cc7a0' }}>
+              bg={'#204988'}
+              _hover={{ background: "gray.200", color: "#204988" }}>
               Sign up Now!
             </Button>
           </Stack>
