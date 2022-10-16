@@ -57,7 +57,7 @@ export default function Home() {
       <Stack spacing={4}>
         <Text
           textTransform={'uppercase'}
-          color={'blue.400'}
+          color={'#204988'}
           fontWeight={600}
           fontSize={'xl'}
           p={2}
