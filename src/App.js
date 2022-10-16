@@ -11,13 +11,22 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
+import { useState } from 'react';
 import Nav from './components/Nav';
 import Home from './components/Home';
-
+import MyRides from './components/MyRides';
+import RequestCard from './components/RequestCard';
+import Requests from './components/Requests';
+import SignUpCard from './components/SignUpCard';
+// const { Client } = require('pg');
 function App() {
-  return <RequestCard />;
+  const [page, setPage] = useState(<Home />);
+  const [login, setLogin] = useState({});
+  return (
+    <>
+      <Nav setPage={setPage} setLogin={setLogin} login={login} />
+      {page}
+    </>
+  );
 }
-
-
 export default App;
-
