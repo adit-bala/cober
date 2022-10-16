@@ -38,17 +38,18 @@ import {
   export default function About() {
     return (
         <VStack spacing = '100px'>
-            <Box w='100%' p={4} color='white'>
+            <Box w='70%' p={5} color='white' ml={'200px'} mr={'200px'}>
                 <Text fontWeight = {'bold'} fontSize = {'40px'} color = {'#204988'}>
                     OUR MISSION STATEMENT
                 </Text>
                 <Text fontWeight = {"medium"} fontSize = {'20px'} color = {'gray'}>
-                We strive to get students to where they need to be at affordable prices and to connect college students together to make transportation safe and easy.
+                We strive to get students to where they need to be at affordable prices and 
+                to connect college students together to make transportation safe and easy.
                 </Text>
 
             </Box>
-            <Box p={4}>
-                <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+            <Box w='70%' p={4}>
+                <SimpleGrid columns={{ base: 1, md: 3 }} spacing={15}>
                     <Feature
                     icon={<Icon as={FcCurrencyExchange} w={10} h={10} />}
                     title={'Payment'}
@@ -71,6 +72,9 @@ import {
                     }
                     />
             </SimpleGrid>
+            <Box mt={'40'} mb={'1'}>
+              <Text fontSize='xs'>Copyright © 2022 Cober, Inc. All Rights Reserved.</Text>
+            </Box>
         </Box>
     </VStack>
     );
