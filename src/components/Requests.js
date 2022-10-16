@@ -72,7 +72,7 @@ import {
               _focus={{
                 bg: 'blue.500',
               }}>
-              More Details >
+              More Details {'>'}
             </Button>
           </HStack>
         </Box>

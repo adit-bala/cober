@@ -19,7 +19,7 @@ import {
 import { Formik, Field, Form } from 'formik';
 import Home from "./Home"
 
-export default function SignUpCard({ setPage, setLogin }) {
+export default function SignupCard({ setPage, setLogin }) {
   return (
     <>
       <Flex minH={'100vh'} align={'center'} justify={'center'} bg={'gray.50'}>
