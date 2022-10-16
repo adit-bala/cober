@@ -13,9 +13,9 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 import Nav from './components/Nav';
 import Home from './components/Home';
-import Rides from './components/MyRides';
+
 function App() {
-  return <Home />;
+  return <RequestCard />;
 }
 
 
