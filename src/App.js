@@ -12,10 +12,11 @@ import {
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
 import Nav from './components/Nav';
-import Requests from './components/Requests';
+import Home from './components/Home';
 
 function App() {
-  return <Requests />;
+  return <Home />;
 }
+
 
 export default App;
