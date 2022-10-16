@@ -21,7 +21,9 @@ export default function Nav() {
     <Box>
       <Flex display="flex" margin="20px" justify="flex-end">
         <Box>
+          <Image src="logo.png" boxSize='50px' align></Image>
         </Box>
+        <Spacer />
         <ButtonGroup variant="ghost">
           <Button _hover={{background: "gray.200"}}>Home</Button>
           <Button _hover={{background: "gray.200"}}>About</Button>
