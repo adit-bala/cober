@@ -441,6 +441,11 @@ export default function FindRides({ setPage, showReq }) {
                 </Formik>
               </Stack>
             </Box>
+            <Center>
+              <Box mt={'40'}>
+                <Text fontSize='xs'>Copyright © 2022 Cober, Inc. All Rights Reserved.</Text>
+              </Box>
+            </Center>
           </Stack>
         </Flex>
       )}

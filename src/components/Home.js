@@ -85,10 +85,10 @@ export default function Home() {
           />
         </Box>
       </Flex>
-      <Box mb={'5'}>
+    </SimpleGrid>
+      <Box mt={'100'} mb={'5'} align={'center'}>
         <Text fontSize='xs'>Copyright © 2022 Cober, Inc. All Rights Reserved.</Text>
       </Box>
-    </SimpleGrid>
     </Container>
     
   );
