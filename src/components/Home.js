@@ -17,6 +17,11 @@ import {
   export default function Home() {
     return (
       <Container maxW={'5xl'}>
+        <Box
+          backgroundImage="url('/images/kyuubi.png')"
+          backgroundPosition="center"
+          backgroundRepeat="no-repeat"
+        />
         <Stack
           textAlign={'center'}
           align={'center'}
