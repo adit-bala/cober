@@ -17,7 +17,8 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { Formik, Field, Form } from 'formik';
-import Home from "./Home"
+import Home from './Home';
+// import initTable from '../backend/postRow';
 
 export default function SignupCard({ setPage, setLogin }) {
   return (
@@ -29,7 +30,7 @@ export default function SignupCard({ setPage, setLogin }) {
               Sign up
             </Heading>
             <Text fontSize={'lg'} color={'gray.600'}>
-              to ride with fellow students :v:
+              to ride with fellow students ✌️
             </Text>
           </Stack>
           <Box rounded={'lg'} bg={'white'} boxShadow={'lg'} p={8}>
@@ -40,15 +41,12 @@ export default function SignupCard({ setPage, setLogin }) {
                   lastName: 'Bala',
                   username: 'aditbala',
                   email: 'cober@berkeley.edu',
-                  password: 'ilovecoding<3',
                   Gender: 'Male',
                 }}
                 onSubmit={(values, actions) => {
                   setTimeout(() => {
-                    setPage(Home);
-                    alert(JSON.stringify(values, null, 2));
+                    setPage(<Home login={values.firstName} />);
                     setLogin(values.username);
-                    
                     actions.setSubmitting(false);
                   }, 1000);
                 }}
@@ -96,17 +94,6 @@ export default function SignupCard({ setPage, setLogin }) {
                       {({ field, form }) => (
                         <FormControl>
                           <FormLabel>Username </FormLabel>
-                          <Input {...field} placeholder="name" />
-                          <FormErrorMessage>
-                            {form.errors.name}
-                          </FormErrorMessage>
-                        </FormControl>
-                      )}
-                    </Field>
-                    <Field name="password">
-                      {({ field, form }) => (
-                        <FormControl>
-                          <FormLabel>Password </FormLabel>
                           <Input {...field} placeholder="name" />
                           <FormErrorMessage>
                             {form.errors.name}
