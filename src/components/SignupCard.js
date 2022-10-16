@@ -17,8 +17,9 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { Formik, Field, Form } from 'formik';
+import Home from "./Home"
 
-export default function SignUpCard() {
+export default function SignUpCard({ setPage, setLogin }) {
   return (
     <>
       <Flex minH={'100vh'} align={'center'} justify={'center'} bg={'gray.50'}>
@@ -37,13 +38,17 @@ export default function SignUpCard() {
                 initialValues={{
                   firstName: 'Adit',
                   lastName: 'Bala',
+                  username: 'aditbala',
                   email: 'cober@berkeley.edu',
                   password: 'ilovecoding<3',
                   Gender: 'Male',
                 }}
                 onSubmit={(values, actions) => {
                   setTimeout(() => {
+                    setPage(Home);
                     alert(JSON.stringify(values, null, 2));
+                    setLogin(values.username);
+                    
                     actions.setSubmitting(false);
                   }, 1000);
                 }}
@@ -80,6 +85,17 @@ export default function SignUpCard() {
                       {({ field, form }) => (
                         <FormControl>
                           <FormLabel>Email (must end in .edu) </FormLabel>
+                          <Input {...field} placeholder="name" />
+                          <FormErrorMessage>
+                            {form.errors.name}
+                          </FormErrorMessage>
+                        </FormControl>
+                      )}
+                    </Field>
+                    <Field name="username">
+                      {({ field, form }) => (
+                        <FormControl>
+                          <FormLabel>Username </FormLabel>
                           <Input {...field} placeholder="name" />
                           <FormErrorMessage>
                             {form.errors.name}

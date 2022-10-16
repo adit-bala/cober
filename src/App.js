@@ -20,10 +20,11 @@ import Requests from './components/Requests';
 import SignUpCard from './components/SignUpCard';
 
 function App() {
-  const [page, setPage] = useState(<SignUpCard />);
+  const [page, setPage] = useState(<Home />);
+  const [login, setLogin] = useState({});
   return (
     <>
-      <Nav setPage={setPage} />
+      <Nav setPage={setPage} setLogin={setLogin} login={login}/>
       {page}
     </>
   );
