@@ -1,3 +1,3 @@
-# To run locally
+# Calhacks 2022 submission
 
-- run `npm start`
+- Won [MLH: Best Use of Github]
